@@ -8,7 +8,10 @@
 
 
     <TextView
+        android:id="@+id/textview1"
         android:textSize="30sp"
+        android:background="#F20"
+        android:textColor="#ffff"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -16,5 +19,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View 1"/>
+    <TextView
+        android:background="#EA80FC"
+        app:layout_constraintRight_toLeftOf="@+id/textview1"
+        app:layout_constraintBottom_toTopOf="@+id/textview1"
+        android:textSize="30sp"
+        android:text="view 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="#80D8FF"
+        app:layout_constraintLeft_toRightOf="@+id/textview1"
+        app:layout_constraintBottom_toTopOf="@+id/textview1"
+        android:textSize="30sp"
+        android:text="view 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="#FF9E80"
+        app:layout_constraintLeft_toRightOf="@+id/textview1"
+        app:layout_constraintTop_toBottomOf="@+id/textview1"
+        android:textSize="30sp"
+        android:text="view 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="#FFE57F"
+        app:layout_constraintRight_toLeftOf="@+id/textview1"
+        app:layout_constraintTop_toBottomOf="@+id/textview1"
+        android:textSize="30sp"
+        android:text="view 5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
