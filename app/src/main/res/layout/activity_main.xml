@@ -8,8 +8,10 @@
 
 
    <TextView
+       app:layout_constraintHorizontal_chainStyle="packed"
+       app:layout_constraintRight_toLeftOf="@id/textview2"
+       app:layout_constraintLeft_toLeftOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintLeft_toLeftOf="@id/guideline"
        android:textColor="#ffff"
        android:id="@+id/textview1"
        android:background="#F20"
@@ -17,10 +19,28 @@
        android:text="view 1"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"/>
-    <androidx.constraintlayout.widget.Guideline
-        android:orientation="vertical"
-        android:id="@+id/guideline"
-        app:layout_constraintGuide_percent="0.1"
+    <TextView
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintRight_toLeftOf="@id/textview3"
+        app:layout_constraintLeft_toRightOf="@id/textview1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ffff"
+        android:id="@+id/textview2"
+        android:background="#19D8BB"
+        android:textSize="30sp"
+        android:text="view 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/textview2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ffff"
+        android:id="@+id/textview3"
+        android:background="#19D8BB"
+        android:textSize="30sp"
+        android:text="view 3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
